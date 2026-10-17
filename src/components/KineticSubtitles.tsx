@@ -1,5 +1,5 @@
 import React from 'react';
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import subtitlesData from '../subtitles.json';
 import { SubtitleItem } from '../types';
 
@@ -9,19 +9,16 @@ export const KineticSubtitles: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // البحث عن السطر الحالي
-  // نترك الجملة تظل ظاهرة فترة وجيزة بعد انتهائها (حوالي 8 إطارات) لتحقيق سلاسة القراءة
+  // إيجاد السطر النشط
   const currentItem = subtitles.find(
-    (item) => frame >= item.startFrame && frame <= item.endFrame + 10
+    (item) => frame >= item.startFrame && frame <= item.endFrame + 12
   );
 
   if (!currentItem) return null;
 
-  // تقدم حركة السطر العام
-  const itemAge = frame - currentItem.startFrame;
   const isLeaving = frame > currentItem.endFrame;
   const exitProgress = isLeaving
-    ? interpolate(frame, [currentItem.endFrame, currentItem.endFrame + 10], [0, 1], {
+    ? interpolate(frame, [currentItem.endFrame, currentItem.endFrame + 12], [0, 1], {
         extrapolateRight: 'clamp',
       })
     : 0;
@@ -30,58 +27,83 @@ export const KineticSubtitles: React.FC = () => {
     <div
       style={{
         position: 'absolute',
-        bottom: 320,
+        bottom: 220,
         left: 0,
         right: 0,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '0 60px',
-        zIndex: 50,
+        padding: '0 40px',
+        zIndex: 100,
         direction: 'rtl',
         pointerEvents: 'none',
         opacity: 1 - exitProgress,
-        transform: `translateY(${-exitProgress * 20}px)`,
+        transform: `translateY(${-exitProgress * 30}px) scale(${1 - exitProgress * 0.05})`,
       }}
     >
+      {/* شريط خلفية كولاج ورقي فخم بأسلوب Vox */}
       <div
         style={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          gap: '12px 18px',
-          background: 'rgba(12, 17, 24, 0.72)',
-          padding: '24px 38px',
-          borderRadius: '16px',
-          backdropFilter: 'blur(10px)',
-          border: '1px solid rgba(212, 175, 55, 0.25)',
-          boxShadow: '0 20px 40px rgba(0, 0, 0, 0.6)',
+          alignItems: 'center',
+          gap: '12px 20px',
+          background: 'rgba(8, 12, 18, 0.88)',
+          padding: '24px 44px',
+          borderRadius: '12px',
+          border: '1.5px solid rgba(212, 175, 55, 0.5)',
+          boxShadow: '0 25px 60px rgba(0, 0, 0, 0.9), inset 0 0 30px rgba(0, 0, 0, 0.8)',
+          backdropFilter: 'blur(16px)',
+          maxWidth: '92%',
+          position: 'relative',
         }}
       >
+        {/* شريط لاصق كولاج (Washi Tape) في الزاوية */}
+        <div
+          style={{
+            position: 'absolute',
+            top: -14,
+            right: 40,
+            width: 90,
+            height: 24,
+            backgroundColor: 'rgba(212, 175, 55, 0.4)',
+            transform: 'rotate(-4deg)',
+            backdropFilter: 'blur(4px)',
+            borderLeft: '1px dashed rgba(255,255,255,0.4)',
+            borderRight: '1px dashed rgba(255,255,255,0.4)',
+          }}
+        />
+
         {currentItem.words.map((w, index) => {
           const isSpoken = frame >= w.startFrame;
           const isCurrentWord = frame >= w.startFrame && frame <= w.endFrame;
 
-          // حركة دخول ناعمة فور بدء نطق الكلمة
-          const wordSpring = spring({
-            frame: frame - w.startFrame,
-            fps,
-            config: { damping: 14, stiffness: 180 },
-          });
+          // حركة نبض للكلمة فور نطقها
+          const popProgress = interpolate(
+            frame,
+            [w.startFrame, w.startFrame + 4, w.endFrame],
+            [0.85, 1.25, 1.0],
+            { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
+          );
 
-          // حركة خاصة للكلمات المفتاحية كما حدد الدليل الإبداعي
-          let keywordTransform = '';
           const cleanWord = w.word.replace(/[.,!?،؛]/g, '');
 
+          // تخصيص نوعي للكلمات المفتاحية
+          let customWordStyle: React.CSSProperties = {};
           if (isCurrentWord) {
-            if (cleanWord === 'وطن') keywordTransform = 'scale(1.25)';
-            else if (cleanWord === 'الأسوار') keywordTransform = 'scaleX(1.3) scaleY(1.1)';
-            else if (cleanWord === 'جدار') keywordTransform = 'scaleY(1.3)';
-            else if (cleanWord === 'الإعصار') keywordTransform = 'rotate(6deg) scale(1.2)';
-            else if (cleanWord === 'الضباب') keywordTransform = 'blur(1px) scale(1.15)';
-            else if (cleanWord.includes('الإبحار')) keywordTransform = 'scaleX(1.35) scale(1.15)';
-            else keywordTransform = 'scale(1.12)';
+            if (cleanWord === 'وطن') {
+              customWordStyle = { color: '#FFE169', textShadow: '0 0 35px #FFE169, 0 0 70px #D4AF37' };
+            } else if (cleanWord === 'الأسوار' || cleanWord === 'وجدار') {
+              customWordStyle = { color: '#FFF4C2', transform: 'scale(1.28) translateY(-4px)' };
+            } else if (cleanWord === 'الأقدار' || cleanWord === 'الإعصار') {
+              customWordStyle = { color: '#FF7B54', textShadow: '0 0 30px #FF7B54' };
+            } else if (cleanWord === 'الضباب' || cleanWord.includes('الإبحار')) {
+              customWordStyle = { color: '#88D9E6', textShadow: '0 0 35px #88D9E6' };
+            } else if (cleanWord === 'رقتي' || cleanWord === 'أشعاري') {
+              customWordStyle = { color: '#FFD700', textShadow: '0 0 30px #FFD700' };
+            }
           }
 
           return (
@@ -89,37 +111,44 @@ export const KineticSubtitles: React.FC = () => {
               key={index}
               style={{
                 fontFamily: "'Amiri', 'Lemonada', serif",
-                fontSize: 52,
+                fontSize: 54,
                 fontWeight: isCurrentWord ? 'bold' : 'normal',
                 color: isCurrentWord
-                  ? '#FFDF73' // ذهبي ناصع ومشرق للكلمة الحالية
+                  ? '#FFE57F'
                   : isSpoken
-                  ? '#FFFFFF' // أبيض مقروء للكلمات المنطوقة
-                  : 'rgba(255, 255, 255, 0.15)', // باهتة قبل نطقها
-                textShadow: isCurrentWord
-                  ? '0 0 20px rgba(255, 223, 115, 0.8), 0 2px 4px rgba(0,0,0,0.8)'
+                  ? '#F0F4F8'
+                  : 'rgba(255, 255, 255, 0.18)',
+                opacity: isSpoken ? 1 : 0.15,
+                transform: isCurrentWord
+                  ? `scale(${popProgress})`
                   : isSpoken
-                  ? '0 2px 4px rgba(0,0,0,0.8)'
-                  : 'none',
-                opacity: isSpoken ? Math.min(1, Math.max(0.1, wordSpring)) : 0.12,
-                transform: `${isSpoken ? `scale(${wordSpring * 0.2 + 0.8})` : 'scale(0.95)'} ${keywordTransform}`,
-                transition: 'all 0.12s ease-out',
+                  ? 'scale(1)'
+                  : 'scale(0.95)',
+                transition: 'all 0.08s cubic-bezier(0.2, 0.9, 0.3, 1)',
                 display: 'inline-block',
                 position: 'relative',
+                lineHeight: 1.4,
+                textShadow: isCurrentWord
+                  ? '0 0 30px rgba(255, 229, 127, 0.9), 0 4px 8px rgba(0,0,0,0.9)'
+                  : isSpoken
+                  ? '0 3px 6px rgba(0,0,0,0.8)'
+                  : 'none',
+                ...customWordStyle,
               }}
             >
               {w.word}
+              {/* خط تسطير سينمائي ذهبي متحرك أسفل الكلمة اللحظية */}
               {isCurrentWord && (
                 <span
                   style={{
                     position: 'absolute',
-                    bottom: -4,
+                    bottom: -2,
                     left: 0,
                     right: 0,
-                    height: 3,
-                    background: '#D4AF37',
+                    height: 4,
+                    background: 'linear-gradient(90deg, transparent, #FFE57F, #D4AF37, transparent)',
                     borderRadius: 2,
-                    boxShadow: '0 0 8px #D4AF37',
+                    boxShadow: '0 0 12px #FFE57F',
                   }}
                 />
               )}
