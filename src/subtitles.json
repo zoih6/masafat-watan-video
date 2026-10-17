@@ -1,0 +1,669 @@
+[
+  {
+    "id": 1,
+    "text": "ما بيننا وطن تباعد ظله",
+    "startSec": 3.27,
+    "endSec": 6.15,
+    "startFrame": 98,
+    "endFrame": 184,
+    "words": [
+      {
+        "word": "ما",
+        "startSec": 3.27,
+        "endSec": 3.846,
+        "startFrame": 98,
+        "endFrame": 115
+      },
+      {
+        "word": "بيننا",
+        "startSec": 3.846,
+        "endSec": 4.422,
+        "startFrame": 115,
+        "endFrame": 133
+      },
+      {
+        "word": "وطن",
+        "startSec": 4.422,
+        "endSec": 4.998,
+        "startFrame": 133,
+        "endFrame": 150
+      },
+      {
+        "word": "تباعد",
+        "startSec": 4.998,
+        "endSec": 5.574,
+        "startFrame": 150,
+        "endFrame": 167
+      },
+      {
+        "word": "ظله",
+        "startSec": 5.574,
+        "endSec": 6.15,
+        "startFrame": 167,
+        "endFrame": 184
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "ومسافة ممتدة الأسوار",
+    "startSec": 6.6,
+    "endSec": 9.74,
+    "startFrame": 198,
+    "endFrame": 292,
+    "words": [
+      {
+        "word": "ومسافة",
+        "startSec": 6.6,
+        "endSec": 7.647,
+        "startFrame": 198,
+        "endFrame": 229
+      },
+      {
+        "word": "ممتدة",
+        "startSec": 7.647,
+        "endSec": 8.693,
+        "startFrame": 229,
+        "endFrame": 261
+      },
+      {
+        "word": "الأسوار",
+        "startSec": 8.693,
+        "endSec": 9.74,
+        "startFrame": 261,
+        "endFrame": 292
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "وجدار جيل كيف أعبر ظهرهُ؟",
+    "startSec": 10.1,
+    "endSec": 14.22,
+    "startFrame": 303,
+    "endFrame": 427,
+    "words": [
+      {
+        "word": "وجدار",
+        "startSec": 10.1,
+        "endSec": 10.924,
+        "startFrame": 303,
+        "endFrame": 328
+      },
+      {
+        "word": "جيل",
+        "startSec": 10.924,
+        "endSec": 11.748,
+        "startFrame": 328,
+        "endFrame": 352
+      },
+      {
+        "word": "كيف",
+        "startSec": 11.748,
+        "endSec": 12.572,
+        "startFrame": 352,
+        "endFrame": 377
+      },
+      {
+        "word": "أعبر",
+        "startSec": 12.572,
+        "endSec": 13.396,
+        "startFrame": 377,
+        "endFrame": 402
+      },
+      {
+        "word": "ظهرهُ؟",
+        "startSec": 13.396,
+        "endSec": 14.22,
+        "startFrame": 402,
+        "endFrame": 427
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "وتباعد الأنساب والأقدار",
+    "startSec": 14.55,
+    "endSec": 17.46,
+    "startFrame": 436,
+    "endFrame": 524,
+    "words": [
+      {
+        "word": "وتباعد",
+        "startSec": 14.55,
+        "endSec": 15.52,
+        "startFrame": 436,
+        "endFrame": 466
+      },
+      {
+        "word": "الأنساب",
+        "startSec": 15.52,
+        "endSec": 16.49,
+        "startFrame": 466,
+        "endFrame": 495
+      },
+      {
+        "word": "والأقدار",
+        "startSec": 16.49,
+        "endSec": 17.46,
+        "startFrame": 495,
+        "endFrame": 524
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "وهي الذكية تستشف مشاعري",
+    "startSec": 17.72,
+    "endSec": 21.4,
+    "startFrame": 532,
+    "endFrame": 642,
+    "words": [
+      {
+        "word": "وهي",
+        "startSec": 17.72,
+        "endSec": 18.64,
+        "startFrame": 532,
+        "endFrame": 559
+      },
+      {
+        "word": "الذكية",
+        "startSec": 18.64,
+        "endSec": 19.56,
+        "startFrame": 559,
+        "endFrame": 587
+      },
+      {
+        "word": "تستشف",
+        "startSec": 19.56,
+        "endSec": 20.48,
+        "startFrame": 587,
+        "endFrame": 614
+      },
+      {
+        "word": "مشاعري",
+        "startSec": 20.48,
+        "endSec": 21.4,
+        "startFrame": 614,
+        "endFrame": 642
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "مخبوءةٌ في رقة وحذار",
+    "startSec": 21.68,
+    "endSec": 25.14,
+    "startFrame": 650,
+    "endFrame": 754,
+    "words": [
+      {
+        "word": "مخبوءةٌ",
+        "startSec": 21.68,
+        "endSec": 22.545,
+        "startFrame": 650,
+        "endFrame": 676
+      },
+      {
+        "word": "في",
+        "startSec": 22.545,
+        "endSec": 23.41,
+        "startFrame": 676,
+        "endFrame": 702
+      },
+      {
+        "word": "رقة",
+        "startSec": 23.41,
+        "endSec": 24.275,
+        "startFrame": 702,
+        "endFrame": 728
+      },
+      {
+        "word": "وحذار",
+        "startSec": 24.275,
+        "endSec": 25.14,
+        "startFrame": 728,
+        "endFrame": 754
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "مجبولة باللغز تقرأ صمتنا",
+    "startSec": 25.4,
+    "endSec": 28.53,
+    "startFrame": 762,
+    "endFrame": 856,
+    "words": [
+      {
+        "word": "مجبولة",
+        "startSec": 25.4,
+        "endSec": 26.182,
+        "startFrame": 762,
+        "endFrame": 785
+      },
+      {
+        "word": "باللغز",
+        "startSec": 26.182,
+        "endSec": 26.965,
+        "startFrame": 785,
+        "endFrame": 809
+      },
+      {
+        "word": "تقرأ",
+        "startSec": 26.965,
+        "endSec": 27.748,
+        "startFrame": 809,
+        "endFrame": 832
+      },
+      {
+        "word": "صمتنا",
+        "startSec": 27.748,
+        "endSec": 28.53,
+        "startFrame": 832,
+        "endFrame": 856
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "وتخاف من غدر الهوى المدرار",
+    "startSec": 28.7,
+    "endSec": 32.07,
+    "startFrame": 861,
+    "endFrame": 962,
+    "words": [
+      {
+        "word": "وتخاف",
+        "startSec": 28.7,
+        "endSec": 29.374,
+        "startFrame": 861,
+        "endFrame": 881
+      },
+      {
+        "word": "من",
+        "startSec": 29.374,
+        "endSec": 30.048,
+        "startFrame": 881,
+        "endFrame": 901
+      },
+      {
+        "word": "غدر",
+        "startSec": 30.048,
+        "endSec": 30.722,
+        "startFrame": 901,
+        "endFrame": 922
+      },
+      {
+        "word": "الهوى",
+        "startSec": 30.722,
+        "endSec": 31.396,
+        "startFrame": 922,
+        "endFrame": 942
+      },
+      {
+        "word": "المدرار",
+        "startSec": 31.396,
+        "endSec": 32.07,
+        "startFrame": 942,
+        "endFrame": 962
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "وأنا البسيط ورأس مالي رقتي",
+    "startSec": 32.2,
+    "endSec": 36.11,
+    "startFrame": 966,
+    "endFrame": 1083,
+    "words": [
+      {
+        "word": "وأنا",
+        "startSec": 32.2,
+        "endSec": 32.982,
+        "startFrame": 966,
+        "endFrame": 989
+      },
+      {
+        "word": "البسيط",
+        "startSec": 32.982,
+        "endSec": 33.764,
+        "startFrame": 989,
+        "endFrame": 1013
+      },
+      {
+        "word": "ورأس",
+        "startSec": 33.764,
+        "endSec": 34.546,
+        "startFrame": 1013,
+        "endFrame": 1036
+      },
+      {
+        "word": "مالي",
+        "startSec": 34.546,
+        "endSec": 35.328,
+        "startFrame": 1036,
+        "endFrame": 1060
+      },
+      {
+        "word": "رقتي",
+        "startSec": 35.328,
+        "endSec": 36.11,
+        "startFrame": 1060,
+        "endFrame": 1083
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "لا جاه يسندني سوى أشعاري",
+    "startSec": 36.35,
+    "endSec": 39.88,
+    "startFrame": 1090,
+    "endFrame": 1196,
+    "words": [
+      {
+        "word": "لا",
+        "startSec": 36.35,
+        "endSec": 37.056,
+        "startFrame": 1090,
+        "endFrame": 1112
+      },
+      {
+        "word": "جاه",
+        "startSec": 37.056,
+        "endSec": 37.762,
+        "startFrame": 1112,
+        "endFrame": 1133
+      },
+      {
+        "word": "يسندني",
+        "startSec": 37.762,
+        "endSec": 38.468,
+        "startFrame": 1133,
+        "endFrame": 1154
+      },
+      {
+        "word": "سوى",
+        "startSec": 38.468,
+        "endSec": 39.174,
+        "startFrame": 1154,
+        "endFrame": 1175
+      },
+      {
+        "word": "أشعاري",
+        "startSec": 39.174,
+        "endSec": 39.88,
+        "startFrame": 1175,
+        "endFrame": 1196
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "جرتنيَ الأشواق نحو غموضها",
+    "startSec": 39.9,
+    "endSec": 42.74,
+    "startFrame": 1197,
+    "endFrame": 1282,
+    "words": [
+      {
+        "word": "جرتنيَ",
+        "startSec": 39.9,
+        "endSec": 40.61,
+        "startFrame": 1197,
+        "endFrame": 1218
+      },
+      {
+        "word": "الأشواق",
+        "startSec": 40.61,
+        "endSec": 41.32,
+        "startFrame": 1218,
+        "endFrame": 1240
+      },
+      {
+        "word": "نحو",
+        "startSec": 41.32,
+        "endSec": 42.03,
+        "startFrame": 1240,
+        "endFrame": 1261
+      },
+      {
+        "word": "غموضها",
+        "startSec": 42.03,
+        "endSec": 42.74,
+        "startFrame": 1261,
+        "endFrame": 1282
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "فمشيت مسلوبا إلى الإعصار",
+    "startSec": 42.9,
+    "endSec": 45.89,
+    "startFrame": 1287,
+    "endFrame": 1377,
+    "words": [
+      {
+        "word": "فمشيت",
+        "startSec": 42.9,
+        "endSec": 43.648,
+        "startFrame": 1287,
+        "endFrame": 1309
+      },
+      {
+        "word": "مسلوبا",
+        "startSec": 43.648,
+        "endSec": 44.395,
+        "startFrame": 1309,
+        "endFrame": 1332
+      },
+      {
+        "word": "إلى",
+        "startSec": 44.395,
+        "endSec": 45.142,
+        "startFrame": 1332,
+        "endFrame": 1354
+      },
+      {
+        "word": "الإعصار",
+        "startSec": 45.142,
+        "endSec": 45.89,
+        "startFrame": 1354,
+        "endFrame": 1377
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "text": "لا أدعي علم الوصول ولم أزل",
+    "startSec": 46.1,
+    "endSec": 49.76,
+    "startFrame": 1383,
+    "endFrame": 1493,
+    "words": [
+      {
+        "word": "لا",
+        "startSec": 46.1,
+        "endSec": 46.71,
+        "startFrame": 1383,
+        "endFrame": 1401
+      },
+      {
+        "word": "أدعي",
+        "startSec": 46.71,
+        "endSec": 47.32,
+        "startFrame": 1401,
+        "endFrame": 1420
+      },
+      {
+        "word": "علم",
+        "startSec": 47.32,
+        "endSec": 47.93,
+        "startFrame": 1420,
+        "endFrame": 1438
+      },
+      {
+        "word": "الوصول",
+        "startSec": 47.93,
+        "endSec": 48.54,
+        "startFrame": 1438,
+        "endFrame": 1456
+      },
+      {
+        "word": "ولم",
+        "startSec": 48.54,
+        "endSec": 49.15,
+        "startFrame": 1456,
+        "endFrame": 1474
+      },
+      {
+        "word": "أزل",
+        "startSec": 49.15,
+        "endSec": 49.76,
+        "startFrame": 1474,
+        "endFrame": 1493
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "رجلا يخبيء خوفه بوقار",
+    "startSec": 49.85,
+    "endSec": 53.37,
+    "startFrame": 1496,
+    "endFrame": 1601,
+    "words": [
+      {
+        "word": "رجلا",
+        "startSec": 49.85,
+        "endSec": 50.73,
+        "startFrame": 1496,
+        "endFrame": 1522
+      },
+      {
+        "word": "يخبيء",
+        "startSec": 50.73,
+        "endSec": 51.61,
+        "startFrame": 1522,
+        "endFrame": 1548
+      },
+      {
+        "word": "خوفه",
+        "startSec": 51.61,
+        "endSec": 52.49,
+        "startFrame": 1548,
+        "endFrame": 1575
+      },
+      {
+        "word": "بوقار",
+        "startSec": 52.49,
+        "endSec": 53.37,
+        "startFrame": 1575,
+        "endFrame": 1601
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "أمضي إليها والضباب يلفني",
+    "startSec": 53.58,
+    "endSec": 57.16,
+    "startFrame": 1607,
+    "endFrame": 1715,
+    "words": [
+      {
+        "word": "أمضي",
+        "startSec": 53.58,
+        "endSec": 54.475,
+        "startFrame": 1607,
+        "endFrame": 1634
+      },
+      {
+        "word": "إليها",
+        "startSec": 54.475,
+        "endSec": 55.37,
+        "startFrame": 1634,
+        "endFrame": 1661
+      },
+      {
+        "word": "والضباب",
+        "startSec": 55.37,
+        "endSec": 56.265,
+        "startFrame": 1661,
+        "endFrame": 1688
+      },
+      {
+        "word": "يلفني",
+        "startSec": 56.265,
+        "endSec": 57.16,
+        "startFrame": 1688,
+        "endFrame": 1715
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "مستسلمًا لمصائر الإبحار!",
+    "startSec": 57.55,
+    "endSec": 61.0,
+    "startFrame": 1726,
+    "endFrame": 1830,
+    "words": [
+      {
+        "word": "مستسلمًا",
+        "startSec": 57.55,
+        "endSec": 58.7,
+        "startFrame": 1726,
+        "endFrame": 1761
+      },
+      {
+        "word": "لمصائر",
+        "startSec": 58.7,
+        "endSec": 59.85,
+        "startFrame": 1761,
+        "endFrame": 1795
+      },
+      {
+        "word": "الإبحار!",
+        "startSec": 59.85,
+        "endSec": 61.0,
+        "startFrame": 1796,
+        "endFrame": 1830
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "text": "كلمات وسيم الزبيري",
+    "startSec": 61.4,
+    "endSec": 64.125,
+    "startFrame": 1842,
+    "endFrame": 1924,
+    "words": [
+      {
+        "word": "كلمات",
+        "startSec": 61.4,
+        "endSec": 62.308,
+        "startFrame": 1842,
+        "endFrame": 1869
+      },
+      {
+        "word": "وسيم",
+        "startSec": 62.308,
+        "endSec": 63.217,
+        "startFrame": 1869,
+        "endFrame": 1896
+      },
+      {
+        "word": "الزبيري",
+        "startSec": 63.217,
+        "endSec": 64.125,
+        "startFrame": 1896,
+        "endFrame": 1924
+      }
+    ]
+  }
+]
